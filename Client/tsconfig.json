@@ -1,0 +1,12 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "jsx": "react",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["app.d.ts","**/*.ts", "**/*.tsx", "src/Screens/Scan/FoodRecognition.js", "test.js"]
+}
