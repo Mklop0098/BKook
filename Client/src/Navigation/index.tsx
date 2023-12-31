@@ -68,11 +68,6 @@ const ApplicationNavigator = () => {
             options={{}}
           />
           <RootStack.Screen
-            name={RootScreens.CATEGORY}
-            component={Category}
-            options={{}}
-          />
-          <RootStack.Screen
             name={RootScreens.RECENT_CATEGORY}
             component={RecentCategory}
             options={{}}

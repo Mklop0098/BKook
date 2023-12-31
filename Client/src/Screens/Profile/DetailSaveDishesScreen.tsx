@@ -402,7 +402,7 @@ export const DetailSaveDishesScreen = () => {
 
     const renderHeader = () => (
         <View style={styles.header}>
-            <ArrowLeftIcon color={'white'} onPress={() => navigation.navigate('Main')}/>
+            <ArrowLeftIcon color={'white'} onPress={() => navigation.goBack()}/>
             <View className="flex flex-row items-center">
               <View className="px-4">
                 <BookmarkIcon color={'white'} />

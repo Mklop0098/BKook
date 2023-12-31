@@ -11,6 +11,7 @@ import { RegisterContainer } from "../../Screens/Register";
 import { RecipeDetail } from "@/Screens/RecipeDetail";
 import { CreateFood } from "@/Screens/Profile/CreateFood";
 import { DetailSaveDishesScreen } from "@/Screens/Profile/DetailSaveDishesScreen";
+import { CategorySearch } from "@/Screens/Category/CategorySearch";
 
 const Tab = createBottomTabNavigator();
 
@@ -22,6 +23,8 @@ export const MainNavigator = () => {
       screenOptions={({ route }) => ({
         tabBarButton: [
           "Detail",
+          "Seasion",
+          "CategorySearch"
         ].includes(route.name)
           ? () => {
               return null;
@@ -39,9 +42,11 @@ export const MainNavigator = () => {
       <Tab.Screen
         name="Search"
         component={CategoryContainer}
+        initialParams={{state: {status: false}}}
         options={{
           tabBarLabel: "Search",
         }}
+
       />
       <Tab.Screen
         name="Post"
@@ -55,6 +60,20 @@ export const MainNavigator = () => {
         component={DetailSaveDishesScreen}
         options={{
           tabBarLabel: "Detail",
+        }}
+      />
+      <Tab.Screen
+        name="Seasion"
+        component={Seasion}
+        options={{
+          tabBarLabel: "Seasion",
+        }}
+      />
+      <Tab.Screen
+        name="CategorySearch"
+        component={CategorySearch}
+        options={{
+          tabBarLabel: "CategorySearch",
         }}
       />
     </Tab.Navigator>
