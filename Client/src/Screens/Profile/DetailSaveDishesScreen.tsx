@@ -287,6 +287,8 @@ import { ButtonComponent } from '@/Components/Button';
 import { Divider } from 'native-base';
 import { FoodBoxType4 } from '@/Components/FoodBox';
 import { useRoute } from "@react-navigation/native";
+import { useUser } from '@/Components/Context/UserContext';
+import { RecipeType } from '../Home/type';
 
 
 
@@ -297,8 +299,15 @@ export const DetailSaveDishesScreen = () => {
 
     const navigation = useNavigation()
     const route = useRoute()
-
+    const { userInfo, onAddSaveDishes} = useUser()
     const {name, owner, ownerAvatar, like, heart, clap, imgUrl, ingredient, ingredientDetail, stepList} = route.params.recipe
+
+    const checkSave = () => {
+      if (userInfo.saveDishes.filter(i => i.name === name)) {
+        return "Đã lưu"
+      }
+      else return "Lưu món"
+    }
 
     const renderItem = () => (
       <View >
@@ -335,12 +344,13 @@ export const DetailSaveDishesScreen = () => {
                   
               </View>
               <ButtonComponent 
-                title={"Lưu món"} 
+                title={checkSave()} 
                 icon={<BookmarkIcon size={26} 
                 color={'white'}/>} 
                 bgColor="orange" 
                 width="w-full" 
                 height="h-10"
+                onPress={() => onAddSaveDishes(route.params.recipe as RecipeType)}
               />
               <View className='mx-1 my-2'>
                 <Divider/>

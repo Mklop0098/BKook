@@ -12,6 +12,7 @@ import { RecipeDetail } from "@/Screens/RecipeDetail";
 import { CreateFood } from "@/Screens/Profile/CreateFood";
 import { DetailSaveDishesScreen } from "@/Screens/Profile/DetailSaveDishesScreen";
 import { CategorySearch } from "@/Screens/Category/CategorySearch";
+import { ProfileContainer } from "@/Screens/Profile";
 
 const Tab = createBottomTabNavigator();
 
@@ -74,6 +75,13 @@ export const MainNavigator = () => {
         component={CategorySearch}
         options={{
           tabBarLabel: "CategorySearch",
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={ProfileContainer}
+        options={{
+          tabBarLabel: "Profile",
         }}
       />
     </Tab.Navigator>

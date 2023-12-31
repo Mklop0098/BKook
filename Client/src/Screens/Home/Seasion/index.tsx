@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { View, Text, FlatList, StyleSheet, ImageBackground, ScrollView, TextInput } from 'react-native';
+import { View, Text, FlatList, StyleSheet, ImageBackground, ScrollView, TextInput, TouchableOpacity } from 'react-native';
 import { useRoute } from "@react-navigation/native";
 import {ArrowLeftIcon, MagnifyingGlassIcon} from 'react-native-heroicons/solid'
 import { useNavigation } from '@react-navigation/native';
@@ -28,7 +28,9 @@ export const Seasion = () => {
         <ScrollView>
           <View className='w-full p-4'>
             <GridView data={tags.flatMap(tag => tag)} cols={2} renderItem={(item) =>
-                <View className='h-24'>
+                <TouchableOpacity className='h-24'
+                  onPress={() => navigation.navigate("CategorySearch", {input: item.name.toLocaleLowerCase()})}
+                >
                   <ImageBackground 
                       source={{uri: `${item.thumbnail}`}} 
                       resizeMode="cover"
@@ -52,7 +54,7 @@ export const Seasion = () => {
                           </View>
                       </LinearGradient>
                   </ImageBackground>
-                </View>
+                </TouchableOpacity>
             } />
           </View>
         </ScrollView>

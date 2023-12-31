@@ -10,6 +10,7 @@ type StepType = {
 }
 
 export type RecipeType = {
+    id: number,
     name: string,
     owner: string,
     ownerAvatar: string,

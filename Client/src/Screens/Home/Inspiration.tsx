@@ -41,11 +41,7 @@ export const Inspiration = () => {
             const resultList = filteredTags[0].recipeList.filter(item => item.ingredient.includes(ingredientsArray[1]))
             return resultList
         }
-        return filteredTags[0].recipeList
-    }
-
-    const filterSeason = (tagsArray: RecipeTagType[]) => {
-        
+        return filteredTags[0].recipeList 
     }
 
     return (
@@ -101,6 +97,7 @@ export const Inspiration = () => {
                     bgColor="#8C8C8C" 
                     width="w-full" 
                     height="h-10"
+                    onPress={() => navigattion.navigate('Seasion')}
                 />
 
             </View>
@@ -127,7 +124,7 @@ export const Inspiration = () => {
                 </View>
                 <View className='w-full'>
                     <CarouselCards 
-                        data={recipe} 
+                        data={tags} 
                         renderItem={(item) => <FoodBoxType5 />}
                     />
                 </View>

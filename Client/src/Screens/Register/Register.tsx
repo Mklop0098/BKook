@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -15,9 +15,75 @@ import { themeColors } from "@/Theme/Variables";
 import { ButtonComponent } from "../../Components/Button";
 import { ImageComponent } from "../../Components/Image";
 import { useNavigation } from "@react-navigation/native";
+import { userData } from "@/Components/Context/data";
+import { UserType } from "@/Components/Context/type";
+import { useUser } from "@/Components/Context/UserContext";
+
+type RegisterType = {
+  name: string,
+  username: string,
+  password: string,
+  confirmPass: string,
+}
+
+enum Error {
+  NAME = 'Name already exist',
+  USERNAME = "Username already exist",
+  CONFIRM = 'Password not match',
+  EMPTY = 'Missing infomation'
+}
+
 
 export const Register = () => {
   const navigation = useNavigation();
+  // name: string,
+  // id: string,
+  // avatar: string,
+  // myDishes: RecipeType[]
+  // saveDishes: RecipeType[]
+  // username: string,
+  // password: string
+
+  const [register, setRegister] = useState<RegisterType>({} as RegisterType)
+  const [error, setError] = useState<string>('')
+
+  const {setUserData} = useUser()
+
+  const checkRegister = () => {
+    if (register.name === '' || register.username === '' || register.password === '' || register.confirmPass === '') {
+      setError(Error.EMPTY)
+    }
+
+    else if (register.confirmPass !== register.password) {
+      setError(Error.CONFIRM)
+    }
+
+    else if (userData.filter(i => i.username === register.username).length > 0) {
+      setError(Error.USERNAME)
+    }
+
+    else if (userData.filter(i => i.name === register.name).length > 0) {
+      setError(Error.NAME)
+    }
+    
+    else {
+      const user: UserType = {
+        name: register.name,
+        id: 'user_' + (Math.random() + 1).toString(36).substring(7),
+        avatar: "https://source.unsplash.com/random",
+        myDishes: [],
+        saveDishes: [],
+        username: register.username,
+        password: register.password
+      }
+      setUserData(user)
+      setRegister({} as RegisterType)
+      setError('')
+      navigation.navigate('Main')
+
+    }
+  }
+
   return (
     <SafeAreaView
       className={`flex-1 bg-[${themeColors.bgColor}] flex w-full justify-center items-center`}
@@ -39,19 +105,37 @@ export const Register = () => {
             placeholder="Name"
             placeholderTextColor={`#9C9C9C`}
             className="text-white border-b-2 border-white text-lg pb-1 mb-4"
+            onChangeText={e => setRegister({...register, 'name': e})}
           ></TextInput>
           <TextInput
-            placeholder="Email"
+            placeholder="Username"
             placeholderTextColor={`#9C9C9C`}
             className="text-white border-b-2 border-white text-lg pb-1 my-4"
+            onChangeText={e => setRegister({...register, 'username': e})}
+
           ></TextInput>
           <TextInput
             placeholder="Password"
             placeholderTextColor={`#9C9C9C`}
             className="text-white border-b-2 border-white text-lg pb-1 my-4"
+            onChangeText={e => setRegister({...register, 'password': e})}
+
           ></TextInput>
+          <TextInput
+            placeholder="Confirm Password"
+            placeholderTextColor={`#9C9C9C`}
+            className="text-white border-b-2 border-white text-lg pb-1 my-4"
+            onChangeText={e => setRegister({...register, 'confirmPass': e})}
+
+          ></TextInput>
+          {
+            error !== '' &&           
+            <View>
+              <Text className='text-sm  text-red-500'>{error}</Text>
+            </View>
+          }
           <TouchableOpacity
-            onPress={() => navigation.navigate(RootScreens.MAIN)}
+            onPress={() => checkRegister()}
             className="w-full bg-[#F66033] rounded-xl py-3 justify-center items-center my-3"
           >
             <Text className=" text-xl text-white">Register</Text>

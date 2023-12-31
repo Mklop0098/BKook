@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -15,9 +15,31 @@ import { themeColors } from "@/Theme/Variables";
 import { ButtonComponent } from "../../Components/Button";
 import { ImageComponent } from "../../Components/Image";
 import { useNavigation } from "@react-navigation/native";
+import { userData } from "@/Components/Context/data";
+import { useUser } from "@/Components/Context/UserContext";
+
+type userData = {
+  username: string,
+  password: string
+}
 
 export const Login = () => {
   const navigation = useNavigation();
+  const [user, setUser] = useState<userData>({} as userData)
+
+  const {setUserData} = useUser()
+  const [error, setError] = useState<boolean>(true)
+
+  const handleCheck = () => {
+    const userLog = userData.filter(i => i.username === user.username && i.password === user.password)
+    if ( userLog.length > 0) {
+      setUserData(userLog[0])
+      navigation.navigate('Main')
+      setError(true)
+    }
+    else setError(false)
+  }
+
   return (
     <SafeAreaView
       className={`flex-1 bg-[${themeColors.bgColor}] flex w-full justify-center items-center`}
@@ -36,40 +58,51 @@ export const Login = () => {
       <View className="flex justify-center items-center h-2/5  w-3/4">
         <View className=" flex w-full flex-col">
           <TextInput
-            placeholder="Email"
+            placeholder="Username"
             placeholderTextColor={`#9C9C9C`}
             className="text-white border-b-2 border-white text-lg pb-1 mb-4"
+            onChangeText={(e) => setUser({...user, 'username': e})}
+
           ></TextInput>
           <TextInput
             placeholder="Password"
             placeholderTextColor={`#9C9C9C`}
             className="text-white border-b-2 border-white text-lg pb-1 my-4"
+            onChangeText={(e) => setUser({...user, 'password': e})}
           ></TextInput>
+          {
+            !error &&           
+            <View>
+              <Text className='text-sm  text-red-500'>Username or password is incorrect</Text>
+            </View>
+          }
+
+
           <TouchableOpacity
-            onPress={() => navigation.navigate("Main")}
+            onPress={() => handleCheck()}
             className="w-full bg-[#F66033] rounded-xl py-3 justify-center items-center my-3"
           >
             <Text className=" text-xl text-white">Login</Text>
           </TouchableOpacity>
         </View>
       </View>
-      <View className="w-5/6 border-b-2 border-gray-600 my-4"></View>
+      <Text className="text-sm  text-[#F66033]">
+        Don't have account? Register
+      </Text>
       <View className="flex justify-start items-center h-1/5 w-3/4 ">
         <View className=" flex w-full">
           <View>
             <TouchableOpacity
-              onPress={() => navigation.navigate(RootScreens.MAIN)}
+                onPress={() => navigation.navigate(RootScreens.REGISTER)}
               className={`w-full bg-[${themeColors.bgColor}] rounded-xl py-3 justify-center items-center my-3 border border-white`}
             >
-              <Text className=" text-lg text-white">Login with Google</Text>
+              <Text className=" text-lg text-white">Sign In</Text>
             </TouchableOpacity>
           </View>
           <TouchableOpacity
             onPress={() => navigation.navigate(RootScreens.REGISTER)}
           >
-            <Text className=" text-sm  text-[#F66033]">
-              Don't have account? Register
-            </Text>
+           
           </TouchableOpacity>
         </View>
       </View>

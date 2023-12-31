@@ -33,7 +33,7 @@ export const Home = (props: IHomeProps) => {
   return (
     <SafeAreaView className={`flex-1 bg-[${themeColors.bgColor}]`}>
       <View className="m-3 flex-row justify-between items-center">
-        <Pressable onPress={()=>navigation.navigate('Setting' as never)}>
+        <Pressable onPress={()=>navigation.navigate('Setting')}>
           <ImageComponent
             source={{ uri: "https://source.unsplash.com/random" }}
             variant="circle"
@@ -43,7 +43,7 @@ export const Home = (props: IHomeProps) => {
         <View className="w-3/4 flex-1 flex-row justify-start items-center mx-3 bg-[#8C8C8C] px-2.5 h-10 rounded-lg">
           <MagnifyingGlassIcon size={26} color={"white"} />
           <Pressable style={styles.input} onPress={() => navigation.navigate('Search', {state})}>
-            <Text>Go vao ten cac nguyen lieu...</Text>
+            <Text className='text-white'>Gõ vào tên các nguyên liệu...</Text>
           </Pressable>
         </View>
         <CameraIcon size={30} color={"white"} />

@@ -27,500 +27,500 @@ export const Ingredients: IngredientType[] = [
     }
 ]
 
-export const recipe: RecipeType[] = [
-    {
-        name:'Cơm chiên thịt bò',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['rice', 'beef', 'egg'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    },
-    {
-        name:'Bạch tuộc hấp gừng',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['octopus', 'ginger'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    },
-    {
-        name:'Chè chuối bột báng',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['banana', 'semolina', 'coconut'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    }, 
-    {
-        name:'Lẩu vịt nấu chao',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['duck', 'fermented bean curd'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    },  
-    {
-        name:'Sallad táo xanh rau bina',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['green apple', 'bina'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    },  
-    {
-        name:'Lagu nấu nho',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['chicken', 'grape', 'potato', 'carrot'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    },
-    {
-        name:'Salad nho',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['chicken', 'grape', 'lettuce'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    },
-    {
-        name:'Trà nho dầm',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['tea', 'grape'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    },
-    {
-        name:'Kem nho',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['grape'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    },
-    {
-        name:'Cooktail nho',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['grape'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    },
-    {
-        name:'Nước ép nho tím',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['grape'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    },
-    {
-        name:'Granola nho',
-        owner:'Arary Green',
-        ownerAvatar:'https://source.unsplash.com/random',
-        like:4,
-        heart:12,
-        clap:1,
-        imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
-        ingredient: ['grape'],
-        ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
-        stepList: [
-            {
-                describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
-                image: [
-                    'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
-                ]
-            },
-            {
-                describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
-                image: [
-                    'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
-                ]
-            },
-            {
-                describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
-                image: [
-                    'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                    'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
-                ]
-            },
-            {
-                describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
-                image: [
-                    'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                    'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
-                ]
-            }
-        ]
-    },
-]
+// export const recipe: RecipeType[] = [
+//     {
+//         name:'Cơm chiên thịt bò',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['rice', 'beef', 'egg'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         name:'Bạch tuộc hấp gừng',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['octopus', 'ginger'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         name:'Chè chuối bột báng',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['banana', 'semolina', 'coconut'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     }, 
+//     {
+//         name:'Lẩu vịt nấu chao',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['duck', 'fermented bean curd'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     },  
+//     {
+//         name:'Sallad táo xanh rau bina',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['green apple', 'bina'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     },  
+//     {
+//         name:'Lagu nấu nho',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['chicken', 'grape', 'potato', 'carrot'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         name:'Salad nho',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['chicken', 'grape', 'lettuce'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         name:'Trà nho dầm',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['tea', 'grape'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         name:'Kem nho',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['grape'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         name:'Cooktail nho',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['grape'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         name:'Nước ép nho tím',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['grape'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         name:'Granola nho',
+//         owner:'Arary Green',
+//         ownerAvatar:'https://source.unsplash.com/random',
+//         like:4,
+//         heart:12,
+//         clap:1,
+//         imgUrl:'https://plus.unsplash.com/premium_photo-1700175395626-360f76faa0c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTcwMTk1Nzk2MQ&ixlib=rb-4.0.3&q=80&w=1080',
+//         ingredient: ['grape'],
+//         ingredientDetail: ['1/4 củ hành tây', '1 bát cơm nguội', 'Bơ, tỏi', '100g thịt thăn bò', '2 cọng măng tây hoặc loại củ tuỳ thích'],
+//         stepList: [
+//             {
+//                 describe: 'Cắt thịt bò, hành tây thành miếng nhỏ tuỳ ý Trộn các gia vị trong nguyên liệu sốt trộn +1-2 nước kim chi cho đều',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/0161b080de7d9b53/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-1-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Phi hành tỏi, xào bò với 1m sốt trộn Bò chín tái chút ra để riêng',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/801d90575d514c9c/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/db31d4f1e23a57a1/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f0c5a188fb73f6df/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-2-photo.webp'
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho ít dầu vào chảo, cho hành tây vào phi kế đến lần lượt cho > cơm thịt bò > hành tây vào đảo cơm đều ráo lại',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/487496537258e0bc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/f248737b6782aa93/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-3-photo.webp',
+//                 ]
+//             },
+//             {
+//                 describe: 'Cho bò cùng hành ngò vào đảo lại là xong, Cho thêm trứng ốp lết ăn kèm nè, Thưởng thức thôi chờ chi nữa',
+//                 image: [
+//                     'https://img-global.cpcdn.com/steps/65b2a1514c4acda2/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                     'https://img-global.cpcdn.com/steps/5e034592d3e296fc/320x256cq70/c%C6%A1m-chien-kimchi-bo-xuc-xich-recipe-step-4-photo.webp',
+//                 ]
+//             }
+//         ]
+//     },
+// ]
 
 export const tags: RecipeTagType[] = [
     {
@@ -528,8 +528,9 @@ export const tags: RecipeTagType[] = [
         thumbnail: 'https://th.bing.com/th?id=OSK.mmcol5QKy2ewir6zPyvCq4pCUN4-Hfo0RE5rFuDSERkOQfWs&w=130&h=100&c=8&o=6&dpr=2.5&pid=SANGAM',
         recipeList: [
             {
+                id: 1,
                 name:'Lagu gà nấu nho',
-                owner:'Arary Green',
+                owner:'Thanh Nam',
                 ownerAvatar:'https://source.unsplash.com/random',
                 like:4,
                 heart:12,
@@ -568,9 +569,10 @@ export const tags: RecipeTagType[] = [
             }
         ]
             },
-            {
+            {   
+                id: 2,
                 name:'Salad nho',
-                owner:'Arary Green',
+                owner:'Thanh Nam',
                 ownerAvatar:'https://source.unsplash.com/random',
                 like:4,
                 heart:12,
@@ -609,9 +611,10 @@ export const tags: RecipeTagType[] = [
             }
         ]
             },
-            {
+            {   
+                id: 3,
                 name:'Trà nho dầm',
-                owner:'Arary Green',
+                owner:'Thanh Nam',
                 ownerAvatar:'https://source.unsplash.com/random',
                 like:4,
                 heart:12,
@@ -651,8 +654,9 @@ export const tags: RecipeTagType[] = [
         ]
             },
             {
+                id: 4,
                 name:'Kem nho',
-                owner:'Arary Green',
+                owner:'Thanh Nam',
                 ownerAvatar:'https://source.unsplash.com/random',
                 like:4,
                 heart:12,
@@ -691,9 +695,10 @@ export const tags: RecipeTagType[] = [
             }
         ]
             },
-            {
+            {   
+                id: 5,
                 name:'Cooktail nho',
-                owner:'Arary Green',
+                owner:'Thanh Nam',
                 ownerAvatar:'https://source.unsplash.com/random',
                 like:4,
                 heart:12,
@@ -733,6 +738,7 @@ export const tags: RecipeTagType[] = [
         ]
             },
             {
+                id: 6,
                 name:'Nước ép nho tím',
                 owner:'Arary Green',
                 ownerAvatar:'https://source.unsplash.com/random',
@@ -774,6 +780,7 @@ export const tags: RecipeTagType[] = [
         ]
             },
             {
+                id: 7,
                 name:'Granola nho',
                 owner:'Arary Green',
                 ownerAvatar:'https://source.unsplash.com/random',
@@ -821,6 +828,7 @@ export const tags: RecipeTagType[] = [
         thumbnail: 'https://th.bing.com/th?id=OSK.6cbd88355145d245c86d77717ebc69ce&w=194&h=194&rs=2&qlt=80&o=6&cdv=1&dpr=2.5&pid=16.1',
         recipeList: [
             {
+                id: 8,
                 name:'Lagu nấu nho',
                 owner:'Arary Green',
                 ownerAvatar:'https://source.unsplash.com/random',
@@ -862,6 +870,7 @@ export const tags: RecipeTagType[] = [
         ]
             },
             {
+                id: 9,
                 name:'Salad ức gà và nho',
                 owner:'Arary Green',
                 ownerAvatar:'https://source.unsplash.com/random',
@@ -903,6 +912,7 @@ export const tags: RecipeTagType[] = [
         ]
             },
             {
+                id: 10,
                 name:'Gà kho xả',
                 owner:'Arary Green',
                 ownerAvatar:'https://source.unsplash.com/random',
@@ -951,6 +961,7 @@ export const tags: RecipeTagType[] = [
         thumbnail: 'https://th.bing.com/th/id/OIP.5Sv3jQuaH9AsQvQRd4B_5QHaEK?w=296&h=180&c=7&r=0&o=5&dpr=2.5&pid=1.7',
         recipeList: [
             {
+                id: 11,
                 name:'Chả rươi',
                 owner:'Arary Green',
                 ownerAvatar:'https://source.unsplash.com/random',
@@ -992,6 +1003,7 @@ export const tags: RecipeTagType[] = [
         ]
             },
             {
+                id: 12,
                 name:'Rươi xào củ niễng',
                 owner:'Arary Green',
                 ownerAvatar:'https://source.unsplash.com/random',
@@ -1033,6 +1045,7 @@ export const tags: RecipeTagType[] = [
         ]
             },
             {
+                id: 13,
                 name:'Canh rươi',
                 owner:'Arary Green',
                 ownerAvatar:'https://source.unsplash.com/random',
@@ -1080,6 +1093,7 @@ export const tags: RecipeTagType[] = [
         thumbnail: 'https://th.bing.com/th/id/OIP.q8res8DGq1TrtR9LkwsEpAHaE9?rs=1&pid=ImgDetMain',
         recipeList: [
             {
+                id: 14,
                 name:'Bò Beefsteak',
                 owner:'Arary Green',
                 ownerAvatar:'https://source.unsplash.com/random',
@@ -1121,6 +1135,7 @@ export const tags: RecipeTagType[] = [
         ]
             },
             {
+                id: 15,
                 name:'Bò kho',
                 owner:'Arary Green',
                 ownerAvatar:'https://source.unsplash.com/random',
@@ -1162,6 +1177,7 @@ export const tags: RecipeTagType[] = [
         ]
             },
             {
+                id: 16,
                 name:'Bò lagu',
                 owner:'Arary Green',
                 ownerAvatar:'https://source.unsplash.com/random',

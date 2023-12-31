@@ -9,7 +9,8 @@ import { LinearGradient } from 'expo-linear-gradient'
 import { ReactionTags } from "./ReactionTags"
 
 type FoodBoxProps = {
-    recip: RecipeType
+    recip: RecipeType,
+    disable?: boolean
 }
 
 type FoodBoxType2Props = {
@@ -235,6 +236,7 @@ export const FoodBoxType4: React.FC<FoodBoxProps> = (props) => {
                 backgroundColor: '#2f2f2f',
             }}
             onPress={() => navigation.navigate("Detail", {recipe})}
+            disabled={props.disable ? props.disable : false}
         >
             <View className="w-full h-full flex-1">
                 <View className='w-full h-full'>

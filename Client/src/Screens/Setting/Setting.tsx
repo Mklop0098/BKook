@@ -16,9 +16,12 @@ import { ButtonComponent } from "../../Components/Button";
 import { ImageComponent } from "../../Components/Image";
 import { useNavigation } from "@react-navigation/native";
 import { ArrowLeftIcon } from "react-native-heroicons/solid";
+import { useUser } from "@/Components/Context/UserContext";
+import { UserType } from "@/Components/Context/type";
 
 export const Setting = () => {
   const navigation = useNavigation();
+  const {setUserData} = useUser()
   return (
     <SafeAreaView className={`flex-1 bg-[${themeColors.bgColor}] flex w-full`}>
       <View className="w-full h-14 bg-[#606060] mt-10 mb-5 flex flex-row items-center">
@@ -67,7 +70,12 @@ export const Setting = () => {
       </View>
       <View className="w-full flex items-center my-10">
         <TouchableOpacity
-          onPress={() => navigation.navigate(RootScreens.LOGIN)}
+          onPress={() =>{
+            setUserData({} as UserType)
+            navigation.navigate(RootScreens.LOGIN)
+          }}
+          
+
         >
           <View className=" bg-white px-10 py-2 rounded-lg">
             <Text className="text-black text-xl">Thoát</Text>
