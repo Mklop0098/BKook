@@ -8,4 +8,5 @@ export enum RootScreens {
   LOGIN = "Login",
   REGISTER = "Register",
   SETTING = "Setting",
+  SCAN = "Scan",
 }

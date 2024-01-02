@@ -12,6 +12,7 @@ import { ListProduct } from "../Screens/Home/ListProduct";
 import { LoginContainer } from "@/Screens/Login/LoginContainer";
 import { RegisterContainer } from "../Screens/Register";
 import { SettingContainer } from "../Screens/Setting";
+import { ScanContainer } from "@/Screens/Scan/ScanContainer";
 
 export type RootStackParamList = {
   [RootScreens.MAIN]: undefined;
@@ -23,7 +24,7 @@ export type RootStackParamList = {
   [RootScreens.LOGIN]: undefined;
   [RootScreens.REGISTER]: undefined;
   [RootScreens.SETTING]: undefined;
-
+  [RootScreens.SCAN]: undefined;
 };
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
@@ -57,11 +58,12 @@ const ApplicationNavigator = () => {
             component={MainNavigator}
             options={{}}
           />
-          {/* <RootStack.Screen
-            name={RootScreens.DETAIL}
-            component={RecipeDetail}
+          <RootStack.Screen
+            name={RootScreens.SCAN}
+            component={ScanContainer}
             options={{}}
-          /> */}
+          />
+
           <RootStack.Screen
             name={RootScreens.PRODUCTS}
             component={ListProduct}

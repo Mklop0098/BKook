@@ -20,19 +20,18 @@ import { UserType } from "@/Components/Context/type";
 import { useUser } from "@/Components/Context/UserContext";
 
 type RegisterType = {
-  name: string,
-  username: string,
-  password: string,
-  confirmPass: string,
-}
+  name: string;
+  username: string;
+  password: string;
+  confirmPass: string;
+};
 
 enum Error {
-  NAME = 'Name already exist',
+  NAME = "Name already exist",
   USERNAME = "Username already exist",
-  CONFIRM = 'Password not match',
-  EMPTY = 'Missing infomation'
+  CONFIRM = "Password not match",
+  EMPTY = "Missing infomation",
 }
-
 
 export const Register = () => {
   const navigation = useNavigation();
@@ -44,45 +43,43 @@ export const Register = () => {
   // username: string,
   // password: string
 
-  const [register, setRegister] = useState<RegisterType>({} as RegisterType)
-  const [error, setError] = useState<string>('')
+  const [register, setRegister] = useState<RegisterType>({} as RegisterType);
+  const [error, setError] = useState<string>("");
 
-  const {setUserData} = useUser()
+  const { setUserData } = useUser();
 
   const checkRegister = () => {
-    if (register.name === '' || register.username === '' || register.password === '' || register.confirmPass === '') {
-      setError(Error.EMPTY)
-    }
-
-    else if (register.confirmPass !== register.password) {
-      setError(Error.CONFIRM)
-    }
-
-    else if (userData.filter(i => i.username === register.username).length > 0) {
-      setError(Error.USERNAME)
-    }
-
-    else if (userData.filter(i => i.name === register.name).length > 0) {
-      setError(Error.NAME)
-    }
-    
-    else {
+    if (
+      register.name === "" ||
+      register.username === "" ||
+      register.password === "" ||
+      register.confirmPass === ""
+    ) {
+      setError(Error.EMPTY);
+    } else if (register.confirmPass !== register.password) {
+      setError(Error.CONFIRM);
+    } else if (
+      userData.filter((i) => i.username === register.username).length > 0
+    ) {
+      setError(Error.USERNAME);
+    } else if (userData.filter((i) => i.name === register.name).length > 0) {
+      setError(Error.NAME);
+    } else {
       const user: UserType = {
         name: register.name,
-        id: 'user_' + (Math.random() + 1).toString(36).substring(7),
+        id: "user_" + (Math.random() + 1).toString(36).substring(7),
         avatar: "https://source.unsplash.com/random",
         myDishes: [],
         saveDishes: [],
         username: register.username,
-        password: register.password
-      }
-      setUserData(user)
-      setRegister({} as RegisterType)
-      setError('')
-      navigation.navigate('Main')
-
+        password: register.password,
+      };
+      setUserData(user);
+      setRegister({} as RegisterType);
+      setError("");
+      navigation.navigate("Main");
     }
-  }
+  };
 
   return (
     <SafeAreaView
@@ -105,35 +102,33 @@ export const Register = () => {
             placeholder="Name"
             placeholderTextColor={`#9C9C9C`}
             className="text-white border-b-2 border-white text-lg pb-1 mb-4"
-            onChangeText={e => setRegister({...register, 'name': e})}
+            onChangeText={(e) => setRegister({ ...register, name: e })}
           ></TextInput>
           <TextInput
             placeholder="Username"
             placeholderTextColor={`#9C9C9C`}
             className="text-white border-b-2 border-white text-lg pb-1 my-4"
-            onChangeText={e => setRegister({...register, 'username': e})}
-
+            onChangeText={(e) => setRegister({ ...register, username: e })}
           ></TextInput>
           <TextInput
+            secureTextEntry={true}
             placeholder="Password"
             placeholderTextColor={`#9C9C9C`}
             className="text-white border-b-2 border-white text-lg pb-1 my-4"
-            onChangeText={e => setRegister({...register, 'password': e})}
-
+            onChangeText={(e) => setRegister({ ...register, password: e })}
           ></TextInput>
           <TextInput
+            secureTextEntry={true}
             placeholder="Confirm Password"
             placeholderTextColor={`#9C9C9C`}
             className="text-white border-b-2 border-white text-lg pb-1 my-4"
-            onChangeText={e => setRegister({...register, 'confirmPass': e})}
-
+            onChangeText={(e) => setRegister({ ...register, confirmPass: e })}
           ></TextInput>
-          {
-            error !== '' &&           
+          {error !== "" && (
             <View>
-              <Text className='text-sm  text-red-500'>{error}</Text>
+              <Text className="text-sm  text-red-500">{error}</Text>
             </View>
-          }
+          )}
           <TouchableOpacity
             onPress={() => checkRegister()}
             className="w-full bg-[#F66033] rounded-xl py-3 justify-center items-center my-3"
