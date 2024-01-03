@@ -51,20 +51,17 @@ export const CategorySearch = () => {
     const filterIngredients= (value: string) => {
         const resultArray = value.split(',').map(item => item.trim());
         let testArr: RecipeType[] = tags.flatMap(tag => tag.recipeList)
-        resultArray.forEach(item => {
-            testArr = testArr.filter(i => i.ingredient.includes(item.toLowerCase()))
-        })
-
-        return testArr
+        const result = testArr.filter((item) => {
+            const foundIngredients = item.ingredient.filter((ingredient) => resultArray.includes(ingredient));
+            return foundIngredients.length > 0;
+          });
+          return result;
     }
 
     const filterData = () => {
-        
         const recipName = tags.flatMap(tag => tag.recipeList).filter(i => calculateMatchRatio(i.name, input) >= 50)
         const ingredientName = filterIngredients(input)
-        console.log(ingredientName)
         return [...recipName, ...ingredientName]
-
     }
 
 
@@ -72,19 +69,21 @@ export const CategorySearch = () => {
     
     return (    
         <View className={`bg-[#333333] flex-1 w-full`}>
-            <View className='flex flex-row bg-black h-14 items-center px-4'>
+            <View className='flex flex-row bg-black h-14 items-center px-4 w-full'>
                 <ArrowLeftIcon size={20} color={"white"} onPress={() => navigation.navigate('Search')}/>
                 <Text
                     style={{
                         color: 'white',
-                        borderRadius: 8,
-                        paddingLeft: 24,
+                        paddingHorizontal: 24,
                         flex: 1,
-                        fontSize: 16
+                        fontSize: 16,
+                        width: '100%'
                     }}
+                    numberOfLines={1}
                 >
                     {input}
                 </Text>
+                
                 <Pressable>
                     <XMarkIcon size={20} color={"white"} />
                 </Pressable>

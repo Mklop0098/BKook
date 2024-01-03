@@ -78,9 +78,7 @@ const Scan = () => {
       // MediaLibrary.saveToLibraryAsync(photo.uri).then(() => {
       //   setPhoto(undefined);
       // });
-      setTimeout(()=>{
 
-      },3000)
       if(!isLoading) {
         const results= convertIngredient(ingredients)
         console.log('result',results)

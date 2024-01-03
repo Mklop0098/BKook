@@ -13,82 +13,43 @@ export const Welcome = (props: {
   return (
     <View style={styles.container}>
       <OnboardFlow
-        // onDone={() => props.onNavigate(RootScreens.MAIN)}
         onDone={() => props.onNavigate(RootScreens.LOGIN)}
         pages={[
           {
-            imageComponent: (
-              <View className="w-full ">
-                <View className=" mb-16 w-full flex items-center">
-                  <Image
-                    style={styles.image}
-                    source={{
-                      uri: "https://res.cloudinary.com/dyc5vrfyd/image/upload/v1703858078/bbptrxalz2eyskeaynry.jpg",
-                    }}
-                  />
-                </View>
-                <View className="w-full flex items-center">
-                  <Text className="text-3xl text-center font-bold mb-16 text-white">
-                    Khám phá thế giới ẩm thực qua ứng dụng Bkook{" "}
-                  </Text>
-                  <Text className="text-xl text-center font-light text-white">
-                    Biến mỗi bữa ăn thành trải nghiệm đặc biệt
-                  </Text>
-                </View>
-              </View>
-            ),
+            title: " Khám phá thế giới ẩm thực qua Bkook",
+            subtitle: " Biến mỗi bữa ăn thành trải nghiệm đặc biệt",
+            imageUri:
+              "https://res.cloudinary.com/dyc5vrfyd/image/upload/v1703858078/bbptrxalz2eyskeaynry.jpg",
+            primaryButtonTitle: "Xin chào",
           },
           {
-            imageComponent: (
-              <View className="w-full ">
-                <View className=" mb-16 w-full flex items-center">
-                  <Image
-                    style={styles.image}
-                    source={{
-                      uri: "https://res.cloudinary.com/dyc5vrfyd/image/upload/v1703858078/bbptrxalz2eyskeaynry.jpg",
-                    }}
-                  />
-                </View>
-                <View className="w-full flex items-center">
-                  <Text className="text-3xl text-center font-bold mb-16 text-white">
-                    Sáng tạo và thử nghiệm các món ngon mới
-                  </Text>
-                  <Text className="text-xl text-center font-light text-white">
-                    Cùng với sự hỗ trợ của Blook
-                  </Text>
-                </View>
-              </View>
-            ),
+            title: "Sáng tạo và thử nghiệm các món ngon mới",
+            subtitle: "Cùng với sự hỗ trợ của BKook",
+            imageUri:
+              "https://res.cloudinary.com/dyc5vrfyd/image/upload/v1703858078/bbptrxalz2eyskeaynry.jpg",
+            primaryButtonTitle: "Tiếp tục",
           },
           {
-            imageComponent: (
-              <View className="w-full ">
-                <View className=" mb-16 w-full flex items-center">
-                  <Image
-                    style={styles.image}
-                    source={{
-                      uri: "https://res.cloudinary.com/dyc5vrfyd/image/upload/v1703858078/bbptrxalz2eyskeaynry.jpg",
-                    }}
-                  />
-                </View>
-                <View className="w-full flex items-center">
-                  <Text className="text-3xl text-center font-bold mb-16 text-white">
-                    Nấu ăn dễ dàng hơn bao giờ hết với Bkook
-                  </Text>
-                  <Text className="text-xl text-center font-light text-white">
-                    Hãy bắt đầu ngay
-                  </Text>
-                </View>
-              </View>
-            ),
+            title: "Nấu ăn dễ dàng hơn bao giờ hết với Bkook",
+            subtitle: "Hãy bắt đầu ngay !",
+            imageUri:
+              "https://res.cloudinary.com/dyc5vrfyd/image/upload/v1703858078/bbptrxalz2eyskeaynry.jpg",
+            primaryButtonTitle: "Bắt đầu",
           },
         ]}
         type={"fullscreen"}
         style={{
-          backgroundColor: "#161616",
+          backgroundColor: "#101213",
+        }}
+        titleStyle={{
+          color: "#FFFFFF",
+        }}
+        subtitleStyle={{
+          color: "#DEDEDE",
+          fontWeight: "400",
         }}
         primaryButtonStyle={{
-          backgroundColor:"#F66033"
+          backgroundColor: "#F66033",
         }}
         paginationColor="#fff"
         paginationSelectedColor="#F66033"
@@ -104,9 +65,5 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     alignItems: "center",
     justifyContent: "center",
-  },
-  image: {
-    height: 300,
-    width: "100vw",
-  },
+  }
 });
